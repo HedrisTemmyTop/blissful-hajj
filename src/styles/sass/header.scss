@@ -1,0 +1,72 @@
+$color-primary-green: #1ec28b;
+$color-secondary-green: #b2f3de;
+$color-primary-grey: #73848c;
+$color-primary-black: #0000;
+$color-secondary-black: #2b2945;
+$color-primary-brown: #ff8900;
+$color-primary-white: #fff;
+$default-font-size: 1.6rem;
+
+.sub-header {
+  background: $color-secondary-green;
+
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  color: $color-secondary-black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & div {
+    display: flex;
+    align-items: center;
+    & span {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.header {
+  padding: 2.5rem 6rem;
+  background-color: $color-primary-white;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  @media only screen and (max-width: 730px) {
+    display: none;
+  }
+  nav {
+    max-width: 115rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    color: $color-secondary-black;
+    font-size: 3rem;
+  }
+  &__nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 70%;
+    color: $color-secondary-black;
+    font-size: 1.8rem;
+    @media only screen and (max-width: 800px) {
+      flex-basis: 80%;
+    }
+    &--contact {
+      transition: all 0.3s;
+      & a {
+        background-color: $color-primary-brown;
+        color: $color-primary-white;
+        padding: 1.8rem 3.5rem;
+        border-radius: 5rem;
+      }
+      &:hover {
+        transform: translateY(-1rem);
+      }
+    }
+  }
+}

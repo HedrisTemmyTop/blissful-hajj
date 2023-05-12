@@ -1,0 +1,162 @@
+$color-primary-green: #1ec28b;
+$color-secondary-green: #b2f3de;
+$color-tertiary-green: #b2f3de91;
+$color-primary-grey: #73848c;
+$color-secondary-grey: #2b294521;
+$color-primary-black: #0000;
+$color-secondary-black: #2b2945;
+$color-primary-brown: #ff8900;
+$color-secondary-brown: #ffedd9;
+$color-primary-white: #fff;
+$default-font-size: 1.6rem;
+
+@mixin button-green {
+  color: $color-primary-white;
+  padding: 1.8rem 5rem;
+  border-radius: 10rem;
+  display: grid;
+  background-color: $color-primary-green;
+  font-size: $default-font-size;
+  border: 0;
+  font-weight: 600;
+  font-family: inherit;
+  place-items: center;
+}
+
+.about {
+  background-image: linear-gradient(
+    to bottom,
+    $color-secondary-green,
+    $color-primary-white
+  );
+  padding: 8rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 115rem;
+    & aside {
+      position: relative;
+      @media only screen and (max-width: 750px) {
+        flex-basis: 100%;
+        width: 80%;
+        max-width: 38.5rem;
+      }
+    }
+    @media only screen and (max-width: 750px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    background-color: $color-primary-white;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    width: auto;
+    flex-basis: 50%;
+    transition: all 0.3s;
+    @media only screen and (max-width: 500px) {
+      width: 90%;
+      object-fit: cover;
+    }
+    &:hover {
+      transform: translateY(-2rem);
+    }
+    // max-width: 35rem;
+    &-big {
+      position: absolute;
+      bottom: -5rem;
+      right: 4rem;
+      @media only screen and (max-width: 500px) {
+        width: 65%;
+        right: -2rem;
+      }
+    }
+    &--1 {
+      height: 50rem;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      width: 37rem;
+      @media only screen and (max-width: 500px) {
+        width: 99.5%;
+        object-fit: cover;
+      }
+    }
+    &--2 {
+      border-radius: 1.5rem;
+      width: 20rem;
+      @media only screen and (max-width: 500px) {
+        width: 99.5%;
+        object-fit: cover;
+        height: 20rem;
+      }
+    }
+  }
+  &__content {
+    margin-left: 4rem;
+    @media only screen and (max-width: 750px) {
+      margin-top: 8rem;
+      flex-basis: 100%;
+      width: 100% !important;
+
+      margin-left: 0;
+    }
+    @media only screen and (max-width: 400px) {
+      padding: 4rem;
+    }
+    & h3 {
+      color: $color-primary-green;
+      font-size: 2rem;
+    }
+    & h1 {
+      line-height: 1.2;
+      font-size: 4rem;
+      margin-top: 2rem;
+    }
+    &--list {
+      margin-top: 2rem;
+      & li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        & svg {
+          color: $color-primary-green;
+          margin-right: 1rem;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  &__rate {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 400px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+    }
+    &--count {
+      font-size: 4rem;
+      color: $color-primary-green;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      @media only screen and (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &__btn {
+    margin-top: 2rem;
+    box-shadow: 0px 20px 50px 0px rgba(30, 194, 138.99999999999997, 0.44);
+    @include button-green();
+    @media only screen and (max-width: 400px) {
+      margin: 6rem auto;
+    }
+  }
+}

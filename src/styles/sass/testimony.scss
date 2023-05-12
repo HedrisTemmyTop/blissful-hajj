@@ -1,0 +1,75 @@
+$color-primary-green: #1ec28b;
+$color-secondary-green: #b2f3de;
+$color-tertiary-green: #b2f3de91;
+$color-primary-grey: #73848c;
+$color-secondary-grey: #2b294521;
+$color-primary-black: #0000;
+$color-secondary-black: #2b2945;
+$color-primary-brown: #ff8900;
+$color-secondary-brown: #ffedd9;
+$color-primary-white: #fff;
+$default-font-size: 1.6rem;
+
+.testimony {
+  padding: 8rem 0;
+  background-image: linear-gradient(
+      to bottom,
+      $color-tertiary-green,
+      $color-secondary-green
+    ),
+    url(../../assets/images/bg-quran.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  &__container {
+    max-width: 115rem;
+    margin: 0 auto;
+    @media only screen and (max-width: 1000px) {
+      width: 80%;
+      max-width: 60rem;
+    }
+  }
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & h3 {
+      color: $color-primary-brown;
+      font-weight: 600;
+      line-height: 1.7;
+      font-size: 3rem;
+    }
+    & h1 {
+      color: $color-primary-white;
+      font-weight: 600;
+      line-height: 1.2;
+
+      font-size: 4rem;
+    }
+  }
+  &__content {
+    background-color: $color-primary-white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    & img {
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+    }
+    & div {
+      color: $color-primary-grey;
+    }
+    & h2 {
+      font-size: 2rem;
+      margin-block: 1rem;
+    }
+  }
+}
