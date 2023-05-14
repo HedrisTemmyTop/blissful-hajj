@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../styles/sass/destination.scss";
 import { MdLocationOn } from "react-icons/md";
 import { FaMapMarkedAlt, FaCalendarAlt } from "react-icons/fa";
