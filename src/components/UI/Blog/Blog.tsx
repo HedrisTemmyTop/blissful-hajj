@@ -1,4 +1,5 @@
-import "../../../styles/sass/blog.scss";
+import "./blog.scss";
+// import "/src/styles/sass/blog.scss";
 import img from "../../../assets/images/img-blog.jpg";
 import img2 from "../../../assets/images/img2-blog.jpg";
 import img3 from "../../../assets/images/img3-blog.jpg";

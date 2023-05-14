@@ -1,5 +1,5 @@
 import { AiOutlineMenuUnfold } from "react-icons/ai";
-import "../../../styles/sass/header.scss";
+import "./header.scss";
 import "../../../styles/sass/variables.scss";
 import { useState } from "react";
 const Header = (): JSX.Element => {

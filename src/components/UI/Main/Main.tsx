@@ -1,6 +1,6 @@
 import Hero from "../Hero/Hero";
 import Book from "../Book/Book";
-import "../../../styles/sass/hero.scss";
+
 import Values from "../values/Values";
 const Main = () => {
   return (

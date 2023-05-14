@@ -1,4 +1,4 @@
-import "../../../styles/sass/hero.scss";
+import "./hero.scss";
 import image from "../../../assets/images/banner_image.png";
 import { BiWorld } from "react-icons/bi";
 import plane from "../../../assets/images/Plane_vector_img.png";

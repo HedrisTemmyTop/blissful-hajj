@@ -1,4 +1,4 @@
-import "../../../styles/sass/about.scss";
+import "./about.scss";
 import { BsCheckCircleFill } from "react-icons/bs";
 import bigImg from "../../../assets/images/about-img.jpg";
 const About = (): JSX.Element => {

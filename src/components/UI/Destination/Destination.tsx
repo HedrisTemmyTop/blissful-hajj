@@ -1,4 +1,4 @@
-import "../../../styles/sass/destination.scss";
+import "./destination.scss";
 import { MdLocationOn } from "react-icons/md";
 import { FaMapMarkedAlt, FaCalendarAlt } from "react-icons/fa";
 import mekka from "../../../assets/images/mekkah.jpg";

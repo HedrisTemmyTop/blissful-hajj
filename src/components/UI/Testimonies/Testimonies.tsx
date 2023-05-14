@@ -1,4 +1,4 @@
-import "../../../styles/sass/testimony.scss";
+import "./testimony.scss";
 import img from "../../../assets/images/Testimonial-girl1.png";
 const Testimonies = (): JSX.Element => {
   return (

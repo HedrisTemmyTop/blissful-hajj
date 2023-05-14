@@ -1,4 +1,4 @@
-import "../../../styles/sass/values.scss";
+import "./values.scss";
 import img from "../../../assets/images/service.png";
 import choice from "../../../assets/images/icon-1.png";
 import guide from "../../../assets/images/icon-2.png";

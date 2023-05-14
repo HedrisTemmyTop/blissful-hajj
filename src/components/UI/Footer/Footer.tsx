@@ -1,5 +1,4 @@
-
-import "../../../styles/sass/footer.scss";
+import "./footer.scss";
 
 const Footer = (): JSX.Element => {
   return (
