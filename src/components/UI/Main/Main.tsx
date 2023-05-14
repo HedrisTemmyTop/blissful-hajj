@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "../Hero/Hero";
 import Book from "../Book/Book";
 import "../../../styles/sass/hero.scss";

@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../styles/sass/values.scss";
 import img from "../../../assets/images/service.png";
 import choice from "../../../assets/images/icon-1.png";

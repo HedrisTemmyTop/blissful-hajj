@@ -6,6 +6,8 @@ import Main from "../components/UI/Main/Main";
 import Destination from "../components/UI/Destination/Destination";
 import About from "../components/UI/About/About";
 import Testimonies from "../components/UI/Testimonies/Testimonies";
+import Blog from "../components/UI/Blog/Blog";
+import Footer from "../components/UI/Footer/Footer";
 const Layout = (): JSX.Element => {
   return (
     <React.Fragment>
@@ -15,6 +17,8 @@ const Layout = (): JSX.Element => {
       <Destination />
       <About />
       <Testimonies />
+      <Blog />
+      <Footer />
     </React.Fragment>
   );
 };

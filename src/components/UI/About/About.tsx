@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../styles/sass/about.scss";
 import { BsCheckCircleFill } from "react-icons/bs";
 import bigImg from "../../../assets/images/about-img.jpg";

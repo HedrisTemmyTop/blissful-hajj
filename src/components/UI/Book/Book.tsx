@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import "../../../styles/sass/form.scss";
+
 const Book = (): JSX.Element => {
   const [open, setOpen] = useState<boolean>(false);
   const [value, setValue] = useState<string>("");
+
+  const handleOptionClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLDivElement;
+    setValue(target.textContent || "");
+  };
+
   return (
     <section className="section-form">
       <form className="form">
@@ -22,27 +29,9 @@ const Book = (): JSX.Element => {
                 open ? "form__input--value open" : "form__input--value"
               }
             >
-              <div
-                onClick={(e: React.MouseEvent<HTMLDivElement>) => {
-                  setValue(e.target.textContent);
-                }}
-              >
-                MEKKAH
-              </div>
-              <div
-                onClick={(e) => {
-                  setValue(e.target.textContent);
-                }}
-              >
-                MEDDINAH
-              </div>
-              <div
-                onClick={(e) => {
-                  setValue(e.target.textContent);
-                }}
-              >
-                BAITU-HAROM
-              </div>
+              <div onClick={handleOptionClick}>MEKKAH</div>
+              <div onClick={handleOptionClick}>MEDDINAH</div>
+              <div onClick={handleOptionClick}>BAITU-HAROM</div>
             </div>
           </div>
           <div className="form__input">

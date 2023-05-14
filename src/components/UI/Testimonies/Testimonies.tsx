@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../styles/sass/testimony.scss";
 import img from "../../../assets/images/Testimonial-girl1.png";
 const Testimonies = (): JSX.Element => {

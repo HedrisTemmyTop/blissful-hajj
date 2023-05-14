@@ -46,6 +46,7 @@ $default-font-size: 1.6rem;
     right: 1rem;
     top: 6rem;
     animation: moveUp 1s linear alternate;
+    animation: swingUp 1s linear 1s infinite alternate;
   }
 
   &__body {
@@ -118,5 +119,14 @@ $default-font-size: 1.6rem;
   }
   100% {
     left: 20rem;
+  }
+}
+
+@keyframes swingUp {
+  from {
+    top: 6rem;
+  }
+  to {
+    bottom: 10rem;
   }
 }

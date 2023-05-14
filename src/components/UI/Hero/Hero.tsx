@@ -1,11 +1,10 @@
-import React from "react";
 import "../../../styles/sass/hero.scss";
 import image from "../../../assets/images/banner_image.png";
 import { BiWorld } from "react-icons/bi";
 import plane from "../../../assets/images/Plane_vector_img.png";
 import camera from "../../../assets/images/Camera_vector_img.png";
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   return (
     <section className="hero">
       <div className="hero__body">
